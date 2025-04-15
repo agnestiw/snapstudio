@@ -72,40 +72,86 @@
   </nav>
 </div>
 
-<!-- Spacer for fixed header -->
+<!-- Spacer for header -->
 <div class="h-24"></div>
 
 <!-- Hero Section -->
 <section id="hero" class="container mx-auto px-4 py-16 md:py-24 geometric-shapes rounded-3xl my-8">
+  <!-- Additional decorative elements for hero section -->
   <div class="circle shape w-8 h-8 top-1/4 left-1/4 border-primary float"></div>
   <div class="circle shape w-8 h-8 bottom-1/4 right-1/3 border-primary float" style="animation-delay: 1s;"></div>
   <div class="triangle shape top-1/3 right-1/4 border-primary float" style="animation-delay: 2s;"></div>
   <div class="square shape w-12 h-12 bottom-1/4 left-1/5 border-primary float" style="animation-delay: 1.5s;"></div>
   
+  <!-- New decorative elements -->
+  <div class="diamond shape top-1/5 right-1/5 border-primary float" style="animation-delay: 0.7s;"></div>
+  <div class="hexagon shape bottom-1/3 left-1/3 border-primary float" style="animation-delay: 1.2s;"></div>
+  <div class="circle shape w-16 h-16 top-1/2 right-1/6 border-accent float" style="animation-delay: 0.5s;"></div>
+  <div class="square shape w-10 h-10 bottom-1/6 right-1/2 border-accent float" style="animation-delay: 1.8s;"></div>
+  
+  <!-- Additional new shapes for hero section -->
+  <div class="circle shape w-20 h-20 top-1/6 left-1/6 border-accent float-slow opacity-30" style="animation-delay: 0.3s;"></div>
+  <div class="triangle shape bottom-1/5 left-1/4 border-primary float-reverse" style="animation-delay: 1.4s;"></div>
+  <div class="pentagon shape top-2/5 right-1/3 border-primary float-slow" style="animation-delay: 0.9s;"></div>
+  <div class="square shape w-14 h-14 bottom-1/3 right-1/5 border-accent rotate-45 float" style="animation-delay: 2.2s;"></div>
+ 
+  <div class="diamond shape bottom-2/5 right-2/5 border-accent float-slow" style="animation-delay: 0.6s;"></div>
+  
+  <!-- Camera shutter animation element -->
+  <div class="camera-shutter absolute top-10 right-10 opacity-30"></div>
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-12 fade-in animate__animated animate__fadeIn">
       <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Studio Foto <span class="text-gradient">Premium</span> untuk Kreativitasmu</h1>
       <p class="text-lg max-w-2xl mx-auto mb-8 text-gray-600">
         Sewa studio foto profesional dengan peralatan lengkap dan setting yang dapat disesuaikan untuk kebutuhan fotografi, videografi, dan content creation Anda.
       </p>
+      
       <a href="#kontak" class="inline-block bg-primary text-white px-8 py-3 font-medium btn-primary rounded-full shadow-lg glow-effect btn-shine">Booking Sekarang</a>
     </div>
     
-    <div class="rounded-2xl overflow-hidden mb-16 bg-white shadow-xl fade-in img-hover animate__animated animate__fadeInUp" style="transition-delay: 0.2s;">
-      <img src="https://cnc-magazine.oramiland.com/parenting/images/studio-foto-jakarta.width-800.format-webp.webp" alt="Studio Foto Premium" class="w-full h-auto">
+    <!-- Image gallery slider for hero section -->
+    <div class="relative rounded-2xl overflow-hidden mb-16 bg-white shadow-xl fade-in img-hover animate__animated animate__fadeInUp" style="transition-delay: 0.2s;">
+      <div class="hero-gallery">
+        <img src="https://cnc-magazine.oramiland.com/parenting/images/studio-foto-jakarta.width-800.format-webp.webp" alt="Studio Foto Premium" class="w-full h-auto">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent"></div>
+      </div>
     </div>
-    
+
+    <!-- Testimonial with avatar -->
     <div class="text-center mb-8 fade-in animate__animated animate__fadeIn" style="transition-delay: 0.4s;">
+      <div class="flex justify-center mb-4">
+        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary p-1">
+          <img src="https://www.nme.com/wp-content/uploads/2025/03/blackpink-jennie-like-jennie-music-video-ruby-album-release-696x442.jpg" alt="Anita Wijaya" class="w-full h-full object-cover rounded-full">
+        </div>
+      </div>
       <p class="text-lg italic mb-6 text-gray-700">"SnapStudio memberikan pengalaman fotografi yang luar biasa. Peralatan lengkap, pencahayaan sempurna, dan staf yang sangat membantu membuat sesi foto kami menjadi sangat produktif."</p>
       <p class="text-sm font-medium text-gray-600">Anita Wijaya, Fashion Photographer</p>
+      
+      <!-- Star rating -->
+      <div class="flex justify-center mt-2">
+        <i class="fas fa-star text-yellow-400"></i>
+        <i class="fas fa-star text-yellow-400"></i>
+        <i class="fas fa-star text-yellow-400"></i>
+        <i class="fas fa-star text-yellow-400"></i>
+        <i class="fas fa-star text-yellow-400"></i>
+      </div>
+    </div>
+    
+    <!-- Client logos -->
+    <div class="py-8 border-t border-gray-200">
+      <p class="text-center text-sm text-gray-500 mb-6">Dipercaya oleh brand terkemuka</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/800px-Adidas_Logo.svg.png" alt="Client Logo" class="h-6 grayscale hover:grayscale-0 transition-all">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="Client Logo" class="h-6 grayscale hover:grayscale-0 transition-all">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1280px-Samsung_Logo.svg.png" alt="Client Logo" class="h-6 grayscale hover:grayscale-0 transition-all">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Client Logo" class="h-6 grayscale hover:grayscale-0 transition-all">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/2560px-Slack_Technologies_Logo.svg.png" alt="Client Logo" class="h-6 grayscale hover:grayscale-0 transition-all">
+      </div>
     </div>
 </section>
 
 <!-- Tentang Studio Section -->
 <section id="tentang-studio" class="animated-bg text-white py-16 md:py-24 geometric-shapes rounded-3xl mx-4 md:mx-8 my-8">
-
-<div class="circle shape w-12 h-12 bottom-1/4 left-1/5 border-white float"></div>
-<div class="triangle shape top-1/3 right-1/4 border-white float" style="animation-delay: 1s;"></div>
 
   <div class="container mx-auto px-4">
     <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
@@ -167,13 +213,13 @@
         <div class="hidden lg:block studio-images-container">
           <div class="overlapping-images" id="studioImages">
             <div class="image-container image-front bg-gray-100 rounded-lg shadow-xl overflow-hidden">
-              <img src="https://i.pinimg.com/736x/99/07/5f/99075f12d2064cc0c79f861e32eb1bbd.jpg" 
+              <img src="https://i.pinimg.com/736x/20/42/e3/2042e3e33208fdb4b286cc33cfc62870.jpg" 
                 alt="Photography Session" 
                 class="w-full h-full object-cover"
               >
             </div>
             <div class="image-container image-back bg-white rounded-lg shadow-xl overflow-hidden">
-              <img src="https://i.pinimg.com/736x/20/42/e3/2042e3e33208fdb4b286cc33cfc62870.jpg" 
+              <img src="https://i.pinimg.com/736x/99/07/5f/99075f12d2064cc0c79f861e32eb1bbd.jpg" 
                 alt="Studio Equipment" 
                 class="w-full h-full object-cover"
               >
@@ -367,9 +413,16 @@
 
 <!-- Footer -->
 <footer class="gradient-bg text-white py-16 geometric-shapes rounded-t-3xl">
+  <!-- Enhanced footer decorative elements -->
   <div class="circle shape w-24 h-24 bottom-1/4 left-1/5 border-white"></div>
   <div class="triangle shape bottom-1/3 right-1/4 border-white"></div>
   <div class="square shape w-16 h-16 top-1/4 left-1/3 border-white"></div>
+  <div class="hexagon shape top-1/5 right-1/5 border-white"></div>
+  <div class="diamond shape bottom-1/6 left-1/6 border-white"></div>
+  <div class="circle shape w-12 h-12 top-1/3 right-1/3 border-white"></div>
+  
+  <!-- Camera lens aperture animation -->
+  <div class="aperture-animation absolute top-20 right-20 opacity-20"></div>
   
   <div class="container mx-auto px-4">
     <div class="flex flex-col md:flex-row justify-between mb-12">
@@ -384,6 +437,29 @@
         <p class="text-gray-200 max-w-xs">
           Studio foto premium dengan peralatan lengkap untuk kebutuhan fotografi, videografi, dan content creation.
         </p>
+        
+        <!-- Added contact information -->
+        <div class="mt-6 space-y-3">
+          <div class="flex items-center">
+            <i class="fas fa-map-marker-alt w-5 text-accent"></i>
+            <span class="ml-3 text-sm text-gray-300">Jl. Kemang Raya No. 15, Jakarta Selatan</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-phone-alt w-5 text-accent"></i>
+            <span class="ml-3 text-sm text-gray-300">+62 21 7654 3210</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-envelope w-5 text-accent"></i>
+            <span class="ml-3 text-sm text-gray-300">info@snapstudio.id</span>
+          </div>
+        </div>
+        
+        <!-- Added business hours -->
+        <div class="mt-6">
+          <h4 class="font-semibold mb-2 text-accent">Jam Operasional</h4>
+          <p class="text-sm text-gray-300">Senin - Jumat: 09:00 - 21:00</p>
+          <p class="text-sm text-gray-300">Sabtu - Minggu: 10:00 - 22:00</p>
+        </div>
       </div>
       
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -393,6 +469,8 @@
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Paket Sewa</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Peralatan</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Backdrop</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Lighting</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Props</a></li>
           </ul>
         </div>
         
@@ -402,6 +480,8 @@
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Fotografer</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Makeup Artist</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Editing</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Videografi</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Printing</a></li>
           </ul>
         </div>
         
@@ -411,6 +491,8 @@
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Tentang Kami</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Karir</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Testimoni</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Partner</a></li>
           </ul>
         </div>
         
@@ -420,31 +502,52 @@
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Booking</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Lokasi</a></li>
             <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Partner</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Bantuan</a></li>
           </ul>
         </div>
       </div>
     </div>
     
+    <!-- Newsletter subscription -->
+    <div class="border-t border-white/10 pt-8 pb-8">
+      <div class="max-w-md mx-auto">
+        <h4 class="font-bold text-center mb-4">Berlangganan Newsletter</h4>
+        <p class="text-sm text-center text-gray-300 mb-4">Dapatkan info terbaru dan promo spesial dari SnapStudio</p>
+        <form class="flex">
+          <input type="email" placeholder="Email Anda" class="flex-1 p-3 rounded-l-lg focus:outline-none text-gray-800">
+          <button type="submit" class="bg-primary px-4 py-3 rounded-r-lg hover:bg-accent transition-colors">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Social media links with enhanced styling -->
     <div class="flex justify-center space-x-4 mb-12">
-      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors hover:scale-110 transform duration-200">
         <i class="fab fa-facebook-f text-white"></i>
       </a>
-      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors hover:scale-110 transform duration-200">
         <i class="fab fa-twitter text-white"></i>
       </a>
-      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors hover:scale-110 transform duration-200">
         <i class="fab fa-instagram text-white"></i>
       </a>
-      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors hover:scale-110 transform duration-200">
         <i class="fab fa-linkedin-in text-white"></i>
       </a>
-      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors hover:scale-110 transform duration-200">
         <i class="fab fa-youtube text-white"></i>
+      </a>
+      <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors hover:scale-110 transform duration-200">
+        <i class="fab fa-tiktok text-white"></i>
       </a>
     </div>
     
+    <!-- Copyright with enhanced styling -->
     <div class="text-center text-sm border-t border-white/10 pt-8">
-      <p>© 2023 - 2025 SnapStudio · <a href="#" class="hover:underline">Privasi</a> · <a href="#" class="hover:underline">Ketentuan</a></p>
+      <p>©2025 SnapStudio · <a href="#" class="hover:underline">Privasi</a> · <a href="#" class="hover:underline">Ketentuan</a> · <a href="#" class="hover:underline">Sitemap</a></p>
     </div>
   </div>
 </footer>
